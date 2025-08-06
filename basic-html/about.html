@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Basic HTML App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for active navigation */
+        .nav-active {
+            color: rgb(37 99 235) !important;
+            background-color: rgb(239 246 255) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                        HTML App
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" 
+                       class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+                        Home
+                    </a>
+                    <a href="about.html" 
+                       class="nav-active px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                        About
+                    </a>
+                    <a href="contact.html" 
+                       class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+                        Contact
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="min-h-screen bg-gray-50">
+        <div class="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
+            <div class="container mx-auto px-4 py-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+                        <p class="text-xl text-gray-600">
+                            Learn more about our mission and the technology behind this application.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            We're passionate about creating modern, performant web applications that provide 
+                            exceptional user experiences. This project demonstrates the power of combining 
+                            HTML, CSS, and Tailwind CSS to build beautiful, accessible applications.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our goal is to showcase best practices in modern web development while providing 
+                            a solid foundation for building real-world applications using fundamental web technologies.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Technology Stack</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                    HTML5 with semantic markup
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                    CSS3 for styling and animations
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                    Tailwind CSS for utility-first styling
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                                    Vanilla JavaScript for interactions
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Features</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                    Multi-page navigation
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                    Responsive design
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                                    Accessible markup
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                                    Modern UI components
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

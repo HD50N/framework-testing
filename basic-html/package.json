@@ -1,0 +1,23 @@
+{
+  "name": "basic-html",
+  "version": "1.0.0",
+  "description": "A basic HTML application with Tailwind CSS demonstrating modern web design principles",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000 || python -m http.server 3000 || npx serve .",
+    "serve": "npx serve .",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwind",
+    "vanilla",
+    "multi-page"
+  ],
+  "author": "Framework Testing",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+} 
