@@ -2,7 +2,7 @@
 
 This repository contains example applications built with various modern web frameworks, all implementing the same design and functionality for easy comparison.
 
-## Frameworks Included
+## Frameworks Included (more to come)
 
 ### ✅ Completed
 - **React + Vite** - `/react-vite/`
