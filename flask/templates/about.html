@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}About - Our App{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                About Us
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Learn more about our team and mission to build amazing web experiences.
+            </p>
+        </div>
+        
+        <div class="mt-16 max-w-4xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Story</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    We are passionate about creating beautiful, performant web applications using modern technologies like Flask, Python, and Tailwind CSS.
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    Our team believes in the power of Python web development and the simplicity that Flask provides. We love building fast, accessible, and maintainable websites.
+                </p>
+                <p class="text-lg text-gray-600">
+                    Whether you're building a personal blog, a business website, or a complex web application, we're here to help you succeed with the best tools and practices.
+                </p>
+            </div>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">
+                        To empower developers to build amazing web experiences with modern, accessible, and performant technologies.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Our Values</h3>
+                    <p class="text-gray-600">
+                        Quality, performance, accessibility, and developer experience are at the core of everything we build.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
