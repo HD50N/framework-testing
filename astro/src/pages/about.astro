@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="Astro App - About">
+  <div class="min-h-screen bg-gray-50">
+    <Navigation />
+    <div class="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
+      <div class="container mx-auto px-4 py-16">
+        <div class="text-center mb-16">
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            About Our Application
+          </h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            This is a demonstration of how to build a modern web application using Astro, 
+            showcasing the framework's capabilities for creating fast, static websites.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              We believe in creating web applications that are not only beautiful and functional, 
+              but also performant and accessible. Astro provides the perfect foundation for 
+              building such applications with its focus on content-driven websites.
+            </p>
+            <p class="text-lg text-gray-600">
+              By leveraging the power of static site generation and modern web technologies, 
+              we can deliver exceptional user experiences while maintaining excellent performance 
+              and SEO capabilities.
+            </p>
+          </div>
+          
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Technology Stack</h2>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-lg text-gray-700">Astro - Static Site Generator</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-lg text-gray-700">TypeScript - Type Safety</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-lg text-gray-700">Tailwind CSS - Styling</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-lg text-gray-700">Vite - Build Tool</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-16 text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Astro?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Zero JavaScript</h3>
+              <p class="text-gray-600">By default, Astro ships zero JavaScript to the browser, resulting in faster page loads.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Component Islands</h3>
+              <p class="text-gray-600">Use any UI framework you want, and only load JavaScript when needed with component islands.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Content-First</h3>
+              <p class="text-gray-600">Built for content-heavy websites with excellent markdown and MDX support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
